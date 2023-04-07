@@ -16,4 +16,7 @@
 - Untuk membuat ApplicationContext menggunakan Annotation, pertama kita bisa perlu membuat Configuration class
 - Configuration Class adalah sebuah class yang memiliki annotation @Configuration 
 
+### Bean
+- Object yang dimasukan ke dalam Spring Container disebut bean
+- Secara default, bean merupakan singelton. JIka kita mengakses bean yang sama, maka akan mengembalikan object yang sama
 
