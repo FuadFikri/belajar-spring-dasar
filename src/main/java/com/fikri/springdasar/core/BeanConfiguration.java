@@ -33,4 +33,18 @@ public class BeanConfiguration {
         log.info("create new foo 2");
         return foo;
     }
+
+    @Bean(value = "fooSeven")
+    public Foo foo7(){
+        var foo =  new Foo();
+        log.info("create new foo 7");
+        return foo;
+    }
+
+    @Bean(value = "fooEight")
+    public Foo foo8(){
+        var foo =  new Foo();
+        log.info("create new foo 8");
+        return foo;
+    }
 }

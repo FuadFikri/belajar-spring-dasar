@@ -44,4 +44,12 @@ public class BeanTest {
         Assertions.assertSame(foo,foo1);
 
     }
+
+    @Test
+    void beanNameTest() {
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanConfiguration.class);
+        Foo foo7 = applicationContext.getBean("fooSeven", Foo.class);
+        Foo foo8 = applicationContext.getBean("fooEight", Foo.class);
+        Assertions.assertNotSame(foo7,foo8);
+    }
 }
