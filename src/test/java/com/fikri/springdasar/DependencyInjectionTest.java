@@ -36,7 +36,8 @@ public class DependencyInjectionTest {
     @Test
     void testDI() {
         var foo = applicationContext.getBean(Foo.class);
-        var bar = applicationContext.getBean(Bar.class);
+//        var bar = applicationContext.getBean(Bar.class);
+        var bar = applicationContext.getBean("bar2",Bar.class);
         var fooBar = applicationContext.getBean(FooBar.class);
 
         Assertions.assertSame(foo, fooBar.getFoo());
