@@ -20,3 +20,9 @@
 - Object yang dimasukan ke dalam Spring Container disebut bean
 - Secara default, bean merupakan singelton. JIka kita mengakses bean yang sama, maka akan mengembalikan object yang sama
 
+
+
+### Dependency Injection
+- teknik dimana kita bisa mengotomatisasi proses pembuatan object yang tergantung dengan object lain, atau kita sebut dependencies
+- Dependencies akan secara otomatis di-inject (dimasukkan) kedalam object yang membutuhkannya
+- Spring Framework sejak awal dibilang sebuah framework IoC yang memang cara kerjanya menggunakan Dependency Injection

@@ -2,7 +2,7 @@ package com.fikri.springdasar;
 
 
 import com.fikri.springdasar.core.BeanConfiguration;
-import com.fikri.springdasar.core.Foo;
+import com.fikri.springdasar.core.data.Foo;
 import com.fikri.springdasar.core.PrimaryConfiguration;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
