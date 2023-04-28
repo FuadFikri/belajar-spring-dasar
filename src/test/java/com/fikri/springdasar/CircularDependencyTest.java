@@ -1,5 +1,6 @@
 package com.fikri.springdasar;
 
+import com.fikri.springdasar.core.DependsOnConfiguration;
 import com.fikri.springdasar.core.data.CyclicConfiguration;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -19,5 +20,10 @@ public class CircularDependencyTest {
         }catch (BeansException e){
             e.printStackTrace();
         }
+    }
+
+    @Test
+    void dependsOnTest() {
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(DependsOnConfiguration.class);
     }
 }

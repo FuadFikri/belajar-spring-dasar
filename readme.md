@@ -31,3 +31,6 @@
 - ketika bean A membutuhkan bean B
 - dan bean B memnutuhkan bean A
 - spring akan memunculkan error creating bean
+
+### Depends On Bean
+- kita ingin sebuah bean dibuat setelah bean lain dibuat
