@@ -34,3 +34,9 @@
 
 ### Depends On Bean
 - kita ingin sebuah bean dibuat setelah bean lain dibuat
+
+### Lazy bean
+-Secara default, bean di Spring akan dibuat ketika aplikasi Spring pertama kali berjalan
+-ketika aplikasi Spring pertama berjalan akan sedikit lambat, hal ini dikarenakan semua bean akan dibuat di awal
+- Namun jika kita mau, kita juga bisa membuat sebuah bean menjadi lazy (malas), dimana bean tidak akan dibuat, sampai memang diakses atau dibutuhkan
+- Untuk membuat sebuah bean menjadi lazy, kita bisa tambahkan annotation @Lazy pada bean tersebut

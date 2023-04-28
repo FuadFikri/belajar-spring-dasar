@@ -2,6 +2,7 @@ package com.fikri.springdasar;
 
 import com.fikri.springdasar.core.DependsOnConfiguration;
 import com.fikri.springdasar.core.data.CyclicConfiguration;
+import com.fikri.springdasar.core.data.Foo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.BeansException;
@@ -25,5 +26,8 @@ public class CircularDependencyTest {
     @Test
     void dependsOnTest() {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(DependsOnConfiguration.class);
+
+        var foo = applicationContext.getBean(Foo.class);
+
     }
 }
